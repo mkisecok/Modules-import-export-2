@@ -1,6 +1,6 @@
 // Your code goes here!
 
-import { fixRoundingErrors,calculateAspectRatio} from './aspect-ratio.js';
+import {calculateAspectRatio} from './aspect-ratio.js';
 
 import {modulo,
     percentage,
@@ -18,7 +18,7 @@ percentageOf();
 difference();
 
 calculateAspectRatio();
-fixRoundingErrors();
+
 
  const moduloForm=document.querySelector('#modulo-form');
 
@@ -26,7 +26,7 @@ fixRoundingErrors();
 
  const percentageOfForm=document.querySelector('#percentageOf-form');
 
-
+const differenceForm=document.querySelector('#difference-form');
  
 // 1
  moduloForm.addEventListener('change', () => {
@@ -42,10 +42,17 @@ fixRoundingErrors();
 
 //3
 
-percentageOfForm.addEventListener('change', ()=>
+percentageOfForm.addEventListener('change' , ()=>
 {
     
     percentageOfForm[2].value=percentageOf( percentageOfForm[0].value, percentageOfForm[1].value )
+});
+
+//4
+
+differenceForm.addEventListener('change', ()=>
+{
+    differenceForm[2].value = difference(differenceForm[0].value, differenceForm[1].value)
 })
 
  
