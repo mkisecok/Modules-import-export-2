@@ -27,6 +27,8 @@ calculateAspectRatio();
  const percentageOfForm=document.querySelector('#percentageOf-form');
 
 const differenceForm=document.querySelector('#difference-form');
+
+const aspectForm=document.querySelector('#aspect-form');
  
 // 1
  moduloForm.addEventListener('change', () => {
@@ -53,6 +55,12 @@ percentageOfForm.addEventListener('change' , ()=>
 differenceForm.addEventListener('change', ()=>
 {
     differenceForm[2].value = difference(differenceForm[0].value, differenceForm[1].value)
-})
+});
 
+//5
+
+aspectForm.addEventListener('change', ()=>
+{
+    aspectForm[3].value = calculateAspectRatio(aspectForm[0].value, aspectForm[1].value,aspectForm[2].value)
+});
  
