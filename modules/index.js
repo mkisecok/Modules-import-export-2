@@ -24,6 +24,8 @@ fixRoundingErrors();
 
  const percentageForm=document.querySelector('#percentage-form');
 
+ const percentageOfForm=document.querySelector('#percentageOf-form');
+
 
  
 // 1
@@ -36,9 +38,14 @@ fixRoundingErrors();
  percentageForm.addEventListener('change', ()=>
  {
      percentageForm[2].value=percentage(percentageForm[0].value,percentageForm[1].value )
- })
+ });
 
+//3
 
- 
-//
+percentageOfForm.addEventListener('change', ()=>
+{
+    
+    percentageOfForm[2].value=percentageOf( percentageOfForm[0].value, percentageOfForm[1].value )
+})
+
  
