@@ -5,5 +5,3 @@
 * Import the files to `index.js` and add the functionality to the UI in the `index.js` file.
 * Do not forget to add the `index.js` file at the end of the `index.html` file.
 
-**Notes**:
-* Deadline: ~ 1hr-1.5hrs
