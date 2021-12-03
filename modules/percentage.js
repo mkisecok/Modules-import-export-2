@@ -14,5 +14,11 @@ function difference(first, second ) {
     let calc = second - first;
     return (calc * 100) / first 
 }
+export {
+    modulo,
+    percentage,
+    percentageOf,
+    difference
+}
 
  

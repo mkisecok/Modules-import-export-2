@@ -11,3 +11,8 @@ function calculateAspectRatio(originalWidth, originalHeight, newValue, valueType
         originalHeight / originalWidth;
     return fixRoundingErrors(formula * newValue);
 }
+export {
+    //fixRoundingErrors,
+    calculateAspectRatio,
+   
+}
